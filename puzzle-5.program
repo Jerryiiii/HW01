@@ -1,0 +1,36 @@
+recipe rightTwice
+| right
+| right
+recipe ColorWay
+| if getColor is blue
+   | down
+   else
+   | up
+rightTwice
+ColorWay
+rightTwice
+ColorWay
+rightTwice
+ColorWay
+rightTwice
+right
+6.
+recipe colorUD
+| if getColor is blue
+   | down
+   | down
+   | down
+   else
+   | up
+   | up
+   | up
+recipe colorLR
+| if getColor is blue
+   | right
+   else
+   | left
+right
+colorUD
+colorLR
+up
+down
