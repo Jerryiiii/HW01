@@ -5,7 +5,6 @@ down
 right
 save getColor as firstColorSeen
 down
-right 
 setColor remember firstColorSeen
 right
 right 
