@@ -12,8 +12,14 @@ recipe colorLR
    | right
    else
    | left
+recipe colorOneStep
+| if getColor is blue 
+  | down
+  else
+  |up
 right
+save getColor as firstColorSeen
 colorUD
 colorLR
-up
-down
+setColor remember firstColorSeen
+colorOneStep
