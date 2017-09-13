@@ -1,27 +1,32 @@
-recipe downEight
-|  repeat if steps < 8
-   |  down
-   |  save steps + 1 as steps
-recipe downSeven
-|  repeat if steps < 7
-   |  down
-   |  save steps + 1 as steps
-recipe upSeven
-|  repeat if steps < 7
-   |  up
-   |  save steps + 1 as steps
-recipe rightTwice
-|  right
-|  right
-downEight
-rightTwice
-upSeven
-rightTwice
-downSeven
-rightTwice
-downSeven
-rightTwice
-upSeven
-rightTwice
-downSeven
-right
+function down8(){
+  var steps = 0 
+while (steps < 8) {
+down()
+steps = steps + 1}
+}
+ function down7(){
+  var steps = 0 
+while (steps < 7) {
+down()
+steps = steps + 1}
+}   
+function up7(){
+  var steps = 0
+  while(steps < 7){
+    up()
+    steps = steps+1}
+}
+function right2(){
+  right()
+  right()
+}
+function ud(){
+  right2()
+  up7()
+  right2()
+  down7()
+}
+down8()
+ud()
+ud()
+right()
