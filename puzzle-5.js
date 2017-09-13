@@ -1,16 +1,18 @@
-recipe rightTwice
-| right
-| right
-recipe ColorWay
-| if getColor is blue
-   | down
-   else
-   | up
-rightTwice
-ColorWay
-rightTwice
-ColorWay
-rightTwice
-ColorWay
-rightTwice
-right
+function rightTwice(){
+  right()
+  right()
+}
+function colorWay(){
+if(getColor()=="blue"){
+  down()}
+  else
+  up()
+}
+rightTwice()
+colorWay()
+rightTwice()
+colorWay()
+rightTwice()
+colorWay()
+rightTwice()
+right()
