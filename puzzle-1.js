@@ -1,12 +1,14 @@
-save 0 as steps 
-repeat if steps < 7
-| down
-| save steps + 1 as steps 
-save 0 as steps 
-repeat if steps < 5
-| right
-| save steps + 1 as steps 
-up
-up
-right 
-right
+var steps = 0 
+while (steps < 7) {
+down()
+steps = steps + 1
+}
+var steps = 0
+while ( steps < 5){
+right ()
+steps = steps+1
+}
+up()
+up()
+right()
+right()
