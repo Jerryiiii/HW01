@@ -1,25 +1,27 @@
-recipe colorUD
-| if getColor is blue
-   | down
-   | down
-   | down
-   else
-   | up
-   | up
-   | up
-recipe colorLR
-| if getColor is blue
-   | right
-   else
-   | left
-recipe colorOneStep
-| if getColor is blue 
-  | down
+function colorud(){
+if (getColor()=="blue"){
+down()
+down()
+down()}
+  else{
+  up()
+  up()
+  up()}
+}
+function colorlr(){
+  if(getColor()=="blue"){
+    right()}
   else
-  |up
-right
-save getColor as firstColorSeen
-colorUD
-colorLR
-setColor remember firstColorSeen
-colorOneStep
+    left()
+}
+function color1step(){
+  if(getColor()=="blue"){
+    down()}
+  else
+    up()}
+right()
+var blue=getColor()
+colorud()
+colorlr()
+setColor(blue)
+color1step()
